@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.wrap,
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: .32rem;
+}
+
+header {
+  width: 100%;
+  height: .8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .12rem;
+  align-items: center;
+}
+
+header span {
+  color: #999;
+}
+
+header span:nth-of-type(2) {
+  font-size: .36rem;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+.pag {
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: .6rem;
+  height: .6rem;
+}
+/*# sourceMappingURL=style.css.map */

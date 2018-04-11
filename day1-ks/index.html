@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span><</span>
+            <span>无连接</span>
+            <span>></span>
+        </header>
+        <div class="swiper-container parent">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background:red">1</div>
+                <div class="swiper-slide" style="background:#f50">2</div>
+                <div class="swiper-slide" style="background:#eee">3</div>
+                <div class="swiper-slide" style="background:#f09">4</div>
+            </div>
+            <div class="swiper-pagination pag"></div>
+        </div>
+    </div>
+</body>
+<script src="swiper/swiper-3.4.2.min.js"></script>
+<script>
+    new Swiper('.parent', {
+        pagination: '.pag',
+        paginationClickable: true
+    })
+</script>
+
+</html>
